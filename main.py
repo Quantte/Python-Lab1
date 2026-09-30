@@ -89,5 +89,7 @@ if __name__ == '__main__':
     try:
         input('\nEnter — запустить анимацию...')
         animate()
-    except (EOFError or EOFError):
+    except EOFError:
+        pass
+    except KeyboardInterrupt:
         pass
