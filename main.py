@@ -86,5 +86,8 @@ if __name__ == '__main__':
     draw_function()
     print()
     draw_sequence_diagram()
-    input('\nEnter — запустить анимацию...')
-    animate()
+    try:
+        input('\nEnter — запустить анимацию...')
+        animate()
+    except (EOFError or EOFError):
+        pass
